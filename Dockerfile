@@ -1,13 +1,13 @@
 FROM python:3.9-slim
 
-# Set working directory
+# Set the working directory to current folder
 WORKDIR /app
 
-# Copy everything into /app
-COPY . /app
+# Copy everything into the container (no extra folder)
+COPY . .
 
-# Expose port 8080
+# Expose the desired port (e.g., 8080)
 EXPOSE 8080
 
-# Start Python HTTP server
+# Run the HTTP server from current directory
 CMD ["python3", "-m", "http.server", "8080"]
