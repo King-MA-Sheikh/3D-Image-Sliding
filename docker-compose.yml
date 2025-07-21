@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   web:
-   images: "maspro900/3dimagesliding:latest"
+   image: "maspro900/3dimagesliding:latest"
     ports:
       - "9090:80"
     container_name: 3d-image-slider
