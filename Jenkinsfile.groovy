@@ -9,6 +9,7 @@ pipeline {
             steps{
                 script{
                     hello()
+                    echo "IT Tech"
                 }
             }
         }
