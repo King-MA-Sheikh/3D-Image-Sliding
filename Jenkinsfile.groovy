@@ -9,7 +9,7 @@ pipeline {
             steps{
                 script{
                     hello()
-                    echo "welcome to the world of IT Tech"
+                    echo "welcome to the world of IT Tech."
                 }
             }
         }
